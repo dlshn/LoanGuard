@@ -14,7 +14,7 @@ enabling financial institutions to make more informed decisions.
   - Display of prediction results
 
 ## Technologies Used
-- **Languages & Frameworks**: Python, Flask, HTML, CSS, JavaScript
+- **Languages & Frameworks**: Python, Flask, HTML, Tailwind, JavaScript
 - **Machine Learning**: Scikit-learn
 - **Database**: SQLite
 - **Tools**: VS Code
