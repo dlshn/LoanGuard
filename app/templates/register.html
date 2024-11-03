@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register Page</title>
+</head>
+
+<body>
+    <!-- nav-start -->
+    <nav class="p-3 bg-gray-600 shadow md:flex md:justify-between md:items-center">
+        <!-- Logo Section -->
+        <div class="flex justify-between items-center">
+            <span class="text-2xl flex items-center font-[poppins] cursor-pointer hover:text-gray-100 duration-500">
+                <img src="../static/logo-3.png" width="50" height="50" alt="loan_guard-logo" class="border border-inherit rounded-full mx-3 bg-white inline">
+                <b>LoanGuard</b>
+            </span>
+            <!-- Hamburger Icon for Small Screens -->
+            <span class="text-3xl cursor-pointer md:hidden block" onclick="toggleMenu()">
+                &#9776;
+            </span>
+        </div>
+
+        <!-- Menu Items -->
+        <ul id="menu" class="md:flex md:items-center md:pl-8 hidden">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="text-xl hover:text-gray-100 duration-500">Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-gray-100 duration-500">About Us</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="register.html" class="p-2 text-xl hover:text-gray-100 hover:bg-gray-600 duration-500 border rounded-3xl bg-gray-100">Sign Up</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="login.html" class="p-2 text-xl hover:text-gray-100 hover:bg-gray-600 duration-500 border rounded-3xl bg-gray-100">Sign in</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nav-end -->
+
+    
+    <section class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+        <div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
+            <!-- left-form -->
+            <div class="md:w-1/2 px-14">
+                <h2 class="font-bold text-2xl text-[#393939]">Register</h2>
+                <p class="text-sm mt-4 text-[#505152]">Welcome to LoanGuard, Register here</p>
+                <form action="" class="flex flex-col gap-4">
+                    <input type="text" class="p-2 mt-6 rounded-xl border" name="name" placeholder="Name" required>
+                    <input type="text" class="p-2 mt-1 rounded-xl border " name="email" placeholder="Email" required>
+                    <div class="relative">  
+                        <input type="password" class="p-2 rounded-xl border w-full" name="password" placeholder="Password" required>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" viewBox="0 0 16 16">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                        </svg>
+                    </div>
+                    
+                    <button class="bg-[#797977] rounded-xl text-white py-2 hover:scale-105 duration-100">Register</button>
+                </form>
+
+                <hr class="border-gray-400 mt-5">
+
+                <div class="mt-5 text-xs flex justtify-between items-center space-x-3">
+                    <p>Already have an account? </p>
+                    <a href="login.html"><input type="button" class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-100" value="Login" ></a>
+                    <!-- <button c>Login</button> -->
+                </div>
+                
+
+            </div>
+            <!-- right-image -->
+            <div class="md:block hidden w-1/2">
+                <img class="rounded-2xl" src="../static/register-img.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+        <div class="text-center">
+            <!-- Logo and Name -->
+            <div class="flex items-center justify-center mb-4">
+                <img src="../static/logo-3.png" width="40" height="40" alt="LoanGuard Logo" class="border rounded-full bg-white mr-2">
+                <span class="text-lg font-semibold text-white">LoanGuard</span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="mb-4">
+                <a href="index.html" class="mx-2 hover:text-gray-200 text-sm">Home</a>
+                <a href="#" class="mx-2 hover:text-gray-200 text-sm">About</a>
+                <a href="register.html" class="mx-2 hover:text-gray-200 text-sm">Sign Up</a>
+                <a href="login.html" class="mx-2 hover:text-gray-200 text-sm">Sign In</a>
+            </div>
+
+            <!-- Contact Information -->
+            <p class="text-xs">Contact us at <a href="mailto:support@loanguard.com" class="hover:text-gray-200">support@loanguard.com</a></p>
+
+            <!-- Copyright -->
+            <p class="text-xs mt-2 text-gray-500">&copy; 2024 LoanGuard. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+        // Toggle menu visibility on small screens
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
