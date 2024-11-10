@@ -15,9 +15,10 @@ enabling financial institutions to make more informed decisions.
 
 ## Technologies Used
 - **Languages & Frameworks**: Python, Flask, HTML, Tailwind, JavaScript
-- **Machine Learning**: Scikit-learn
+- **Machine Learning**: KNeighborsClassifier from Scikit-learn
+- **Libraries**: pandas, numpy
 - **Database**: SQLite
-- **Tools**: VS Code
+- **Tools**: VS Code, jupyter notebook
 
 ## Project Structure
 ```
